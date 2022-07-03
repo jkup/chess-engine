@@ -1,0 +1,26 @@
+{
+  "name": "chess-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkup/chess-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkup/chess-engine/issues"
+  },
+  "homepage": "https://github.com/jkup/chess-engine#readme",
+  "dependencies": {
+    "chess.js": "^0.13.3"
+  },
+  "devDependencies": {
+    "@types/chess.js": "^0.13.2"
+  }
+}
