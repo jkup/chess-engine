@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "esbuild js/index.ts --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16 --watch --outfile=dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +19,11 @@
   },
   "homepage": "https://github.com/jkup/chess-engine#readme",
   "dependencies": {
-    "@chrisoakman/chessboardjs": "^1.0.0",
-    "chess.js": "^0.13.3"
+    "chess.js": "^0.13.3",
+    "cm-chessboard": "^4.1.9"
   },
   "devDependencies": {
-    "@types/chess.js": "^0.13.2"
+    "@types/chess.js": "^0.13.2",
+    "esbuild": "^0.14.48"
   }
 }
