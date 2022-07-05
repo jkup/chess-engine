@@ -35,25 +35,21 @@ function makeRandomMove() {
     }
   });
 
+  let candidateMoves: string[] = [];
+
   if (movesObject.checks.length > 0) {
-    let randomIdx = Math.floor(Math.random() * movesObject.checks.length);
-
-    game.move(movesObject.checks[randomIdx]);
-
-    chessboard.setPosition(game.fen());
+    candidateMoves = movesObject.checks;
   } else if (movesObject.captures.length > 0) {
-    let randomIdx = Math.floor(Math.random() * movesObject.checks.length);
-
-    game.move(movesObject.captures[randomIdx]);
-
-    chessboard.setPosition(game.fen());
+    candidateMoves = movesObject.captures;
   } else {
-    let randomIdx = Math.floor(Math.random() * movesObject.moves.length);
-
-    game.move(movesObject.moves[randomIdx]);
-
-    chessboard.setPosition(game.fen());
+    candidateMoves = movesObject.moves;
   }
+
+  let randomIdx = Math.floor(Math.random() * movesObject.checks.length);
+
+  game.move(movesObject.checks[randomIdx]);
+
+  chessboard.setPosition(game.fen());
 
   window.setTimeout(makeRandomMove, 500);
 }
