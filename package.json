@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "esbuild js/index.ts --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16 --watch --outfile=dist/bundle.js",
+    "dev": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,10 +20,11 @@
   "homepage": "https://github.com/jkup/chess-engine#readme",
   "dependencies": {
     "chess.js": "^0.13.3",
-    "cm-chessboard": "^4.1.9"
+    "cm-chessboard": "^4.1.9",
+    "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
     "@types/chess.js": "^0.13.2",
-    "esbuild": "^0.14.48"
+    "typescript": "^4.7.4"
   }
 }

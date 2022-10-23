@@ -1,0 +1,75 @@
+input[type="text"] {
+  width: 500px;
+  height: 25px;
+}
+
+svg {
+  background: transparent;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  display: block;
+  float: left;
+}
+
+.square.dark {
+  background: #c5a076;
+}
+
+.square.light {
+  background: #ecdab9;
+}
+
+/* White Pieces */
+
+.white.king {
+  background-image: url(/assets/white_king.svg);
+}
+
+.white.queen {
+  background-image: url(/assets/white_queen.svg);
+}
+
+.white.rook {
+  background-image: url(/assets/white_rook.svg);
+}
+
+.white.bishop {
+  background-image: url(/assets/white_bishop.svg);
+}
+
+.white.knight {
+  background-image: url(/assets/white_knight.svg);
+}
+
+.white.pawn {
+  background-image: url(/assets/white_pawn.svg);
+}
+
+/* Black Pieces */
+
+.black.king {
+  background-image: url(/assets/black_king.svg);
+}
+
+.black.queen {
+  background-image: url(/assets/black_queen.svg);
+}
+
+.black.rook {
+  background-image: url(/assets/black_rook.svg);
+}
+
+.black.bishop {
+  background-image: url(/assets/black_bishop.svg);
+}
+
+.black.knight {
+  background-image: url(/assets/black_knight.svg);
+}
+
+.black.pawn {
+  background-image: url(/assets/black_pawn.svg);
+}

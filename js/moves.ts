@@ -1,9 +1,12 @@
 import { Chess } from "chess.js";
-import { Chessboard } from "cm-chessboard/src/cm-chessboard/Chessboard.js";
+// import { Chessboard } from "cm-chessboard/src/cm-chessboard/Chessboard.js";
+import Chessboard from "./chessboard";
 
-let chessboard = new Chessboard(document.getElementById("board"), {
-  position: "start",
-});
+// let chessboard = new Chessboard(document.getElementById("board"), {
+//   position: "start",
+// });
+
+Chessboard("start");
 
 let game = Chess();
 
@@ -49,7 +52,7 @@ function makeRandomMove() {
 
   game.move(movesObject.checks[randomIdx]);
 
-  chessboard.setPosition(game.fen());
+  // chessboard.setPosition(game.fen());
 
   window.setTimeout(makeRandomMove, 500);
 }
